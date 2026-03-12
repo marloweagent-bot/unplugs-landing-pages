@@ -78,9 +78,21 @@
         .reason {
             background: var(--card);
             border-radius: 16px;
-            padding: 32px;
+            padding: 0;
             margin-bottom: 24px;
             border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        .reason-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .reason-content {
+            padding: 28px 32px 32px;
         }
 
         .reason-number {
@@ -107,21 +119,6 @@
             line-height: 1.7;
         }
 
-        .reason .visual-note {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border);
-            font-size: 0.875rem;
-            color: var(--text-muted);
-        }
-
-        .reason .visual-note svg {
-            flex-shrink: 0;
-        }
-
         /* Mini CTA */
         .mini-cta {
             display: inline-flex;
@@ -145,6 +142,13 @@
             margin-bottom: 80px;
             border: 1px solid var(--border);
             text-align: center;
+        }
+
+        .final-cta-image {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            margin-bottom: 24px;
         }
 
         .final-cta h2 {
@@ -233,8 +237,11 @@
             .hero h1 {
                 font-size: 1.875rem;
             }
-            .reason {
+            .reason-content {
                 padding: 24px;
+            }
+            .reason-image {
+                height: 180px;
             }
             .final-cta {
                 padding: 32px 20px;
@@ -251,62 +258,58 @@
 
         <section class="reasons">
             <article class="reason">
-                <span class="reason-number">01</span>
-                <h2>No More Awkward Yelling</h2>
-                <p>You're at the bar. Friend says something. You pull out your earplug, lean in, cup your ear like you're 80. With <a href="#why-unplugs">Unplugs</a>, you tap once and you're in the conversation. Tap again, you're back to protected. No fumbling.</p>
-                <div class="visual-note">
-                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M8 2v12M2 8h12"/></svg>
-                    <span>Split screen — removing earplugs mid-convo vs. tapping <a href="#why-unplugs">Unplugs</a></span>
+                <img src="https://unplugshearing.com/cdn/shop/files/8H6A0273-Enhanced-NR.jpg?v=1753350453&width=960" alt="Person using Unplugs at event" class="reason-image">
+                <div class="reason-content">
+                    <span class="reason-number">01</span>
+                    <h2>No More Awkward Yelling</h2>
+                    <p>You're at the bar. Friend says something. You pull out your earplug, lean in, cup your ear like you're 80. With <a href="#why-unplugs">Unplugs</a>, you tap once and you're in the conversation. Tap again, you're back to protected. No fumbling.</p>
+                    <a href="#why-unplugs" class="mini-cta">See why Unplugs →</a>
                 </div>
-                <a href="#why-unplugs" class="mini-cta">See why Unplugs →</a>
             </article>
 
             <article class="reason">
-                <span class="reason-number">02</span>
-                <h2>Stop Losing $30 Every Festival</h2>
-                <p>The average festie loses 2-3 pairs per season. That's $60-90 down the drain—and hours unprotected while you figure out where they went. <a href="#why-unplugs">Unplugs</a> stay in. You're not fishing them out every 10 minutes.</p>
-                <div class="visual-note">
-                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M8 2v12M2 8h12"/></svg>
-                    <span>Pile of lost earplugs on festival ground / "RIP" gravestone</span>
+                <img src="https://unplugshearing.com/cdn/shop/files/Copy_of_DSC05442-Enhanced-NR_v2_2.jpg?v=1753352513&width=960" alt="Festival scene" class="reason-image">
+                <div class="reason-content">
+                    <span class="reason-number">02</span>
+                    <h2>Stop Losing $30 Every Festival</h2>
+                    <p>The average festie loses 2-3 pairs per season. That's $60-90 down the drain—and hours unprotected while you figure out where they went. <a href="#why-unplugs">Unplugs</a> stay in. You're not fishing them out every 10 minutes.</p>
+                    <a href="#why-unplugs" class="mini-cta">See why Unplugs →</a>
                 </div>
-                <a href="#why-unplugs" class="mini-cta">See why Unplugs →</a>
             </article>
 
             <article class="reason">
-                <span class="reason-number">03</span>
-                <h2>Actually Hear Your Friends</h2>
-                <p>Earplugs make you feel like you're underwater while everyone else is vibing. <a href="#why-unplugs">Unplugs</a> let you click in for the music and click out for the moment. You're part of the night—not just surviving it.</p>
-                <div class="visual-note">
-                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M8 2v12M2 8h12"/></svg>
-                    <span>Group laughing together, one person clearly engaged</span>
+                <img src="https://unplugshearing.com/cdn/shop/files/Copy_of_DSC01553-Enhanced-NR-2_v2.jpg?v=1753350337&width=960" alt="Friends connecting at event" class="reason-image">
+                <div class="reason-content">
+                    <span class="reason-number">03</span>
+                    <h2>Actually Hear Your Friends</h2>
+                    <p>Earplugs make you feel like you're underwater while everyone else is vibing. <a href="#why-unplugs">Unplugs</a> let you click in for the music and click out for the moment. You're part of the night—not just surviving it.</p>
+                    <a href="#why-unplugs" class="mini-cta">See why Unplugs →</a>
                 </div>
-                <a href="#why-unplugs" class="mini-cta">See why Unplugs →</a>
             </article>
 
             <article class="reason">
-                <span class="reason-number">04</span>
-                <h2>One-Handed, Eyes-Closed Simple</h2>
-                <p>Try reinserting a silicone earplug in a dark, sweaty crowd. Now imagine tapping a button. That's it. No mirror, no light, no "wait let me fix this real quick."</p>
-                <div class="visual-note">
-                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M8 2v12M2 8h12"/></svg>
-                    <span>Close-up of finger tapping earpiece in dark venue</span>
+                <img src="https://unplugshearing.com/cdn/shop/files/Conn.gif?v=1754631454&width=640" alt="Tap to connect animation" class="reason-image" style="object-fit: contain; background: #1a1a1a;">
+                <div class="reason-content">
+                    <span class="reason-number">04</span>
+                    <h2>One-Handed, Eyes-Closed Simple</h2>
+                    <p>Try reinserting a silicone earplug in a dark, sweaty crowd. Now imagine tapping a button. That's it. No mirror, no light, no "wait let me fix this real quick."</p>
+                    <a href="#why-unplugs" class="mini-cta">See why Unplugs →</a>
                 </div>
-                <a href="#why-unplugs" class="mini-cta">See why Unplugs →</a>
             </article>
 
             <article class="reason">
-                <span class="reason-number">05</span>
-                <h2>Built for the Whole Night</h2>
-                <p>Earplugs are binary: in or out. <a href="#why-unplugs">Unplugs</a> let you ride the energy—protected during the peak, open for the downtempo. Your hearing stays safe. Your experience stays alive.</p>
-                <div class="visual-note">
-                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M8 2v12M2 8h12"/></svg>
-                    <span>Timeline graphic showing 8-hour set with protection levels</span>
+                <img src="https://unplugshearing.com/cdn/shop/files/8H6A9802-Enhanced-NR_copy.jpg?v=1753344805&width=960" alt="All night event" class="reason-image">
+                <div class="reason-content">
+                    <span class="reason-number">05</span>
+                    <h2>Built for the Whole Night</h2>
+                    <p>Earplugs are binary: in or out. <a href="#why-unplugs">Unplugs</a> let you ride the energy—protected during the peak, open for the downtempo. Your hearing stays safe. Your experience stays alive.</p>
+                    <a href="#why-unplugs" class="mini-cta">See why Unplugs →</a>
                 </div>
-                <a href="#why-unplugs" class="mini-cta">See why Unplugs →</a>
             </article>
         </section>
 
         <section class="final-cta" id="why-unplugs">
+            <img src="https://unplugshearing.com/cdn/shop/files/B3_4.png?v=1760111877" alt="Unplugs product" class="final-cta-image">
             <h2>Why <a href="https://unplugshearing.com" style="color: var(--primary);">Unplugs</a>?</h2>
             <div class="features">
                 <div class="feature">
@@ -346,7 +349,7 @@
                     </div>
                 </div>
             </div>
-            <a href="https://unplugshearing.com/preorder" class="cta-button">
+            <a href="https://unplugshearing.com/products/unplugs" class="cta-button">
                 Preorder for Festival Season
                 <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>

@@ -78,9 +78,21 @@
         .reason {
             background: var(--card);
             border-radius: 16px;
-            padding: 32px;
+            padding: 0;
             margin-bottom: 24px;
             border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        .reason-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .reason-content {
+            padding: 28px 32px 32px;
         }
 
         .reason-number {
@@ -107,21 +119,6 @@
             line-height: 1.7;
         }
 
-        .reason .visual-note {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border);
-            font-size: 0.875rem;
-            color: var(--text-muted);
-        }
-
-        .reason .visual-note svg {
-            flex-shrink: 0;
-        }
-
         /* Mini CTA */
         .mini-cta {
             display: inline-flex;
@@ -145,6 +142,13 @@
             margin-bottom: 80px;
             border: 1px solid var(--border);
             text-align: center;
+        }
+
+        .final-cta-image {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            margin-bottom: 24px;
         }
 
         .final-cta h2 {
@@ -239,8 +243,11 @@
             .hero h1 {
                 font-size: 1.875rem;
             }
-            .reason {
+            .reason-content {
                 padding: 24px;
+            }
+            .reason-image {
+                height: 180px;
             }
             .final-cta {
                 padding: 32px 20px;
@@ -257,62 +264,58 @@
 
         <section class="reasons">
             <article class="reason">
-                <span class="reason-number">01</span>
-                <h2>"Flat Attenuation" Still Sounds Like Trash</h2>
-                <p>The marketing says "hear every frequency perfectly, just quieter." Reality: you still sound like you're talking through a pillow. And good luck hearing your friend order drinks.</p>
-                <div class="visual-note">
-                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M8 2v12M2 8h12"/></svg>
-                    <span>Waveform comparison — marketing claims vs. reality</span>
+                <img src="https://unplugshearing.com/cdn/shop/files/7.png?v=1758651308" alt="Sound waveform comparison" class="reason-image" style="object-fit: contain; background: #1a1a1a;">
+                <div class="reason-content">
+                    <span class="reason-number">01</span>
+                    <h2>"Flat Attenuation" Still Sounds Like Trash</h2>
+                    <p>The marketing says "hear every frequency perfectly, just quieter." Reality: you still sound like you're talking through a pillow. And good luck hearing your friend order drinks.</p>
+                    <a href="#why-unplugs" class="mini-cta">There's a better way →</a>
                 </div>
-                <a href="#why-unplugs" class="mini-cta">There's a better way →</a>
             </article>
 
             <article class="reason">
-                <span class="reason-number">02</span>
-                <h2>You Take Them Out Anyway</h2>
-                <p>Be honest—how many times per show do you pull them out to hear what someone said? Every. Single. Time. That's not protection. That's a fidget toy with a case.</p>
-                <div class="visual-note">
-                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M8 2v12M2 8h12"/></svg>
-                    <span>Hand holding earplug, other hand cupping ear</span>
+                <img src="https://unplugshearing.com/cdn/shop/files/8H6A0273-Enhanced-NR.jpg?v=1753350453&width=960" alt="Person at event" class="reason-image">
+                <div class="reason-content">
+                    <span class="reason-number">02</span>
+                    <h2>You Take Them Out Anyway</h2>
+                    <p>Be honest—how many times per show do you pull them out to hear what someone said? Every. Single. Time. That's not protection. That's a fidget toy with a case.</p>
+                    <a href="#why-unplugs" class="mini-cta">There's a better way →</a>
                 </div>
-                <a href="#why-unplugs" class="mini-cta">There's a better way →</a>
             </article>
 
             <article class="reason">
-                <span class="reason-number">03</span>
-                <h2>The "I'll Just Put Them Back In" Lie</h2>
-                <p>You take them out for one song. Then the drop hits. Then you're three hours deep and they're still in your pocket. You told yourself you'd put them back. You didn't.</p>
-                <div class="visual-note">
-                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M8 2v12M2 8h12"/></svg>
-                    <span>Timeline showing gaps in protection throughout the night</span>
+                <img src="https://unplugshearing.com/cdn/shop/files/Prot.gif?v=1754632864&width=640" alt="Protection animation" class="reason-image" style="object-fit: contain; background: #1a1a1a;">
+                <div class="reason-content">
+                    <span class="reason-number">03</span>
+                    <h2>The "I'll Just Put Them Back In" Lie</h2>
+                    <p>You take them out for one song. Then the drop hits. Then you're three hours deep and they're still in your pocket. You told yourself you'd put them back. You didn't.</p>
+                    <a href="#why-unplugs" class="mini-cta">There's a better way →</a>
                 </div>
-                <a href="#why-unplugs" class="mini-cta">There's a better way →</a>
             </article>
 
             <article class="reason">
-                <span class="reason-number">04</span>
-                <h2>They Fall Out or Hurt</h2>
-                <p>Foam doesn't fit. Silicone slips. Customs cost $200 and still feel weird after hour four. There's no winning—just different flavors of "I guess this is fine."</p>
-                <div class="visual-note">
-                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M8 2v12M2 8h12"/></svg>
-                    <span>Person adjusting earplugs uncomfortably</span>
+                <img src="https://unplugshearing.com/cdn/shop/files/Copy_of_DSC05442-Enhanced-NR_v2_2.jpg?v=1753352513&width=960" alt="Event scene" class="reason-image">
+                <div class="reason-content">
+                    <span class="reason-number">04</span>
+                    <h2>They Fall Out or Hurt</h2>
+                    <p>Foam doesn't fit. Silicone slips. Customs cost $200 and still feel weird after hour four. There's no winning—just different flavors of "I guess this is fine."</p>
+                    <a href="#why-unplugs" class="mini-cta">There's a better way →</a>
                 </div>
-                <a href="#why-unplugs" class="mini-cta">There's a better way →</a>
             </article>
 
             <article class="reason">
-                <span class="reason-number">05</span>
-                <h2>You've Bought Like Six Pairs</h2>
-                <p>Eargasms, Loops, Earpeace, that random Amazon 3-pack. You've tried them all. They're all sitting in a drawer or lost at EDC 2023. At some point, the problem isn't the brand—it's the format.</p>
-                <div class="visual-note">
-                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M8 2v12M2 8h12"/></svg>
-                    <span>Collection of different earplug brands and cases</span>
+                <img src="https://unplugshearing.com/cdn/shop/files/8H6A9802-Enhanced-NR_copy.jpg?v=1753344805&width=960" alt="Concert experience" class="reason-image">
+                <div class="reason-content">
+                    <span class="reason-number">05</span>
+                    <h2>You've Bought Like Six Pairs</h2>
+                    <p>Eargasms, Loops, Earpeace, that random Amazon 3-pack. You've tried them all. They're all sitting in a drawer or lost at EDC 2023. At some point, the problem isn't the brand—it's the format.</p>
+                    <a href="#why-unplugs" class="mini-cta">There's a better way →</a>
                 </div>
-                <a href="#why-unplugs" class="mini-cta">There's a better way →</a>
             </article>
         </section>
 
         <section class="final-cta" id="why-unplugs">
+            <img src="https://unplugshearing.com/cdn/shop/files/B3_4.png?v=1760111877" alt="Unplugs product" class="final-cta-image">
             <h2>There's a Better Way</h2>
             <p class="intro"><a href="https://unplugshearing.com">Unplugs</a>: tap to connect, tap to protect. No more compromises.</p>
             <div class="features">
@@ -353,7 +356,7 @@
                     </div>
                 </div>
             </div>
-            <a href="https://unplugshearing.com/preorder" class="cta-button">
+            <a href="https://unplugshearing.com/products/unplugs" class="cta-button">
                 Preorder for Festival Season
                 <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
