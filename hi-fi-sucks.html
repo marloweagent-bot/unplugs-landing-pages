@@ -149,6 +149,35 @@
             text-decoration: underline;
         }
 
+        /* Mid-page CTA */
+        .mid-cta {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .mid-cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: var(--primary);
+            color: var(--secondary);
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 14px 28px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+        }
+
+        .mid-cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(41, 239, 120, 0.3);
+            opacity: 1;
+        }
+
         /* Final CTA Section */
         .final-cta {
             background: linear-gradient(180deg, var(--card) 0%, #1a1a1a 100%);
@@ -257,6 +286,34 @@
             font-size: 0.875rem;
         }
 
+        /* Mobile sticky CTA */
+        .mobile-sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--secondary);
+            border-top: 1px solid var(--border);
+            padding: 12px 16px;
+            z-index: 1000;
+        }
+
+        .mobile-sticky-cta a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: var(--primary);
+            color: var(--secondary);
+            font-weight: 700;
+            font-size: 0.95rem;
+            padding: 14px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            width: 100%;
+        }
+
         @media (max-width: 768px) {
             .reason {
                 flex-direction: column !important;
@@ -274,6 +331,13 @@
             }
             .final-cta {
                 padding: 32px 20px;
+                margin-bottom: 100px;
+            }
+            footer {
+                padding-bottom: 80px;
+            }
+            .mobile-sticky-cta {
+                display: block;
             }
         }
     </style>
@@ -310,6 +374,14 @@
                 </div>
             </article>
 
+            <!-- Mid-page CTA 1 -->
+            <div class="mid-cta">
+                <a href="#why-unplugs" class="mid-cta-button">
+                    See What Actually Works
+                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l3 3 3-3M9 4v8"/></svg>
+                </a>
+            </div>
+
             <article class="reason">
                 <div class="reason-image-wrapper">
                     <img src="https://unplugshearing.com/cdn/shop/files/Prot.gif?v=1754632864&width=640" alt="Protection animation" class="reason-image" style="object-fit: contain; background: #1a1a1a;">
@@ -333,6 +405,14 @@
                     <a href="#why-unplugs" class="mini-cta">There's a better way →</a>
                 </div>
             </article>
+
+            <!-- Mid-page CTA 2 -->
+            <div class="mid-cta">
+                <a href="#why-unplugs" class="mid-cta-button">
+                    Done With Earplugs?
+                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l3 3 3-3M9 4v8"/></svg>
+                </a>
+            </div>
 
             <article class="reason">
                 <div class="reason-image-wrapper">
@@ -402,5 +482,13 @@
             <p>© 2026 <a href="https://unplugshearing.com">Unplugs Hearing</a>. Protect your hearing. Stay in the moment.</p>
         </div>
     </footer>
+
+    <!-- Mobile sticky CTA -->
+    <div class="mobile-sticky-cta">
+        <a href="https://unplugshearing.com/products/unplugs">
+            GET YOUR UNPLUGS
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+    </div>
 </body>
 </html>
