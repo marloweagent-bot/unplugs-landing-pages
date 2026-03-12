@@ -47,7 +47,7 @@
         }
 
         .container {
-            max-width: 720px;
+            max-width: 960px;
             margin: 0 auto;
             padding: 0 24px;
         }
@@ -78,21 +78,35 @@
         .reason {
             background: var(--card);
             border-radius: 16px;
-            padding: 0;
             margin-bottom: 24px;
             border: 1px solid var(--border);
             overflow: hidden;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .reason:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .reason-image-wrapper {
+            flex: 0 0 45%;
+            min-height: 280px;
         }
 
         .reason-image {
             width: 100%;
-            height: 220px;
+            height: 100%;
             object-fit: cover;
             display: block;
         }
 
         .reason-content {
-            padding: 28px 32px 32px;
+            flex: 1;
+            padding: 32px 36px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .reason-number {
@@ -104,6 +118,7 @@
             padding: 4px 12px;
             border-radius: 20px;
             margin-bottom: 16px;
+            width: fit-content;
         }
 
         .reason h2 {
@@ -142,6 +157,9 @@
             margin-bottom: 80px;
             border: 1px solid var(--border);
             text-align: center;
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .final-cta-image {
@@ -239,15 +257,20 @@
             font-size: 0.875rem;
         }
 
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 1.875rem;
+        @media (max-width: 768px) {
+            .reason {
+                flex-direction: column !important;
+            }
+            .reason-image-wrapper {
+                flex: none;
+                min-height: 200px;
+                height: 200px;
             }
             .reason-content {
                 padding: 24px;
             }
-            .reason-image {
-                height: 180px;
+            .hero h1 {
+                font-size: 1.875rem;
             }
             .final-cta {
                 padding: 32px 20px;
@@ -264,7 +287,9 @@
 
         <section class="reasons">
             <article class="reason">
-                <img src="https://unplugshearing.com/cdn/shop/files/7.png?v=1758651308" alt="Sound waveform comparison" class="reason-image" style="object-fit: contain; background: #1a1a1a;">
+                <div class="reason-image-wrapper">
+                    <img src="https://unplugshearing.com/cdn/shop/files/7.png?v=1758651308" alt="Sound waveform comparison" class="reason-image" style="object-fit: contain; background: #1a1a1a;">
+                </div>
                 <div class="reason-content">
                     <span class="reason-number">01</span>
                     <h2>"Flat Attenuation" Still Sounds Like Trash</h2>
@@ -274,7 +299,9 @@
             </article>
 
             <article class="reason">
-                <img src="https://unplugshearing.com/cdn/shop/files/8H6A0273-Enhanced-NR.jpg?v=1753350453&width=960" alt="Person at event" class="reason-image">
+                <div class="reason-image-wrapper">
+                    <img src="https://unplugshearing.com/cdn/shop/files/8H6A0273-Enhanced-NR.jpg?v=1753350453&width=960" alt="Person at event" class="reason-image">
+                </div>
                 <div class="reason-content">
                     <span class="reason-number">02</span>
                     <h2>You Take Them Out Anyway</h2>
@@ -284,7 +311,9 @@
             </article>
 
             <article class="reason">
-                <img src="https://unplugshearing.com/cdn/shop/files/Prot.gif?v=1754632864&width=640" alt="Protection animation" class="reason-image" style="object-fit: contain; background: #1a1a1a;">
+                <div class="reason-image-wrapper">
+                    <img src="https://unplugshearing.com/cdn/shop/files/Prot.gif?v=1754632864&width=640" alt="Protection animation" class="reason-image" style="object-fit: contain; background: #1a1a1a;">
+                </div>
                 <div class="reason-content">
                     <span class="reason-number">03</span>
                     <h2>The "I'll Just Put Them Back In" Lie</h2>
@@ -294,7 +323,9 @@
             </article>
 
             <article class="reason">
-                <img src="https://unplugshearing.com/cdn/shop/files/Copy_of_DSC05442-Enhanced-NR_v2_2.jpg?v=1753352513&width=960" alt="Event scene" class="reason-image">
+                <div class="reason-image-wrapper">
+                    <img src="https://unplugshearing.com/cdn/shop/files/Copy_of_DSC05442-Enhanced-NR_v2_2.jpg?v=1753352513&width=960" alt="Event scene" class="reason-image">
+                </div>
                 <div class="reason-content">
                     <span class="reason-number">04</span>
                     <h2>They Fall Out or Hurt</h2>
@@ -304,7 +335,9 @@
             </article>
 
             <article class="reason">
-                <img src="https://unplugshearing.com/cdn/shop/files/8H6A9802-Enhanced-NR_copy.jpg?v=1753344805&width=960" alt="Concert experience" class="reason-image">
+                <div class="reason-image-wrapper">
+                    <img src="https://unplugshearing.com/cdn/shop/files/8H6A9802-Enhanced-NR_copy.jpg?v=1753344805&width=960" alt="Concert experience" class="reason-image">
+                </div>
                 <div class="reason-content">
                     <span class="reason-number">05</span>
                     <h2>You've Bought Like Six Pairs</h2>
